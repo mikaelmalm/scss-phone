@@ -1,2 +1,7 @@
 # scss-phone
-An attempt to make an Samsung S10 with a single div
+
+Samsung S10 built with a single div
+
+## Result 
+
+![Samsung s10](https://github.com/mikaelmalm/scss-phone/blob/main/screenshots/phone.png?raw=true)
