@@ -1,0 +1,327 @@
+$bgColor: rgba(#1abc9c, 0.3);
+$invis: transparent;
+$lens: #0a1010;
+$metal-border: #cbcfd3;
+
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $bgColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  height: 58.2vmin;
+  width: 27.6vmin;
+  border-radius: 2.6vmin;
+  position: relative;
+  left: -20px;
+
+  $lensSize: 1.69;
+  background-image: radial-gradient(
+      circle at 25% 16%,
+      $lens 0vmin,
+      $invis calc(0vmin)
+    ),
+    // cam 1
+      radial-gradient(
+        circle at 30% 16%,
+        rgba(#fff, 1.5) 0.01vmin,
+        $invis 0.15vmin
+      ),
+    radial-gradient(circle at 30% 16%, $lens 0.4vmin, $invis 0.6vmin),
+    radial-gradient(
+      circle at 30% 16%,
+      darken($metal-border, 30%) 0.6vmin,
+      $invis 0.8vmin
+    ),
+    radial-gradient(circle at 30% 16%, $lens 0.8vmin, $invis 0.8vmin),
+    radial-gradient(circle at 30% 16%, lighten(#1f2a2b, 5%) 1vmin, $invis 1vmin),
+    // cam 2
+      radial-gradient(
+        circle at 45% 16%,
+        rgba(#fff, 1.5) 0.01vmin,
+        $invis 0.15vmin
+      ),
+    radial-gradient(circle at 45% 16%, $lens 0.4vmin, $invis 0.6vmin),
+    radial-gradient(
+      circle at 45% 16%,
+      darken($metal-border, 45%) 0.6vmin,
+      $invis 0.8vmin
+    ),
+    radial-gradient(circle at 45% 16%, $lens 0.8vmin, $invis 0.8vmin),
+    radial-gradient(circle at 45% 16%, lighten(#1f2a2b, 5%) 1vmin, $invis 1vmin),
+    // probably not the best solution to the lens, but had no other idea
+      radial-gradient(
+        circle at 78% 16%,
+        $lens #{$lensSize}vmin,
+        $invis #{$lensSize}vmin
+      ),
+    // cam 3
+      radial-gradient(
+        circle at 60% 16%,
+        rgba(#fff, 1.5) 0.01vmin,
+        $invis 0.15vmin
+      ),
+    radial-gradient(circle at 60% 16%, $lens 0.4vmin, $invis 0.6vmin),
+    radial-gradient(
+      circle at 60% 16%,
+      darken($metal-border, 60%) 0.6vmin,
+      $invis 0.8vmin
+    ),
+    radial-gradient(circle at 60% 16%, $lens 0.8vmin, $invis 0.8vmin),
+    radial-gradient(circle at 60% 16%, lighten(#1f2a2b, 5%) 1vmin, $invis 1vmin),
+    // probably not the best solution to the lens, but had no other idea
+      radial-gradient(
+        circle at 78% 16%,
+        $lens #{$lensSize}vmin,
+        $invis #{$lensSize}vmin
+      ),
+    radial-gradient(
+      circle at 76% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 74% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 72% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 70% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 68% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 66% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 64% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 62% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 60% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 58% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 56% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 54% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 52% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 50% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 48% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 46% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 44% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 42% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 40% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 38% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 36% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 34% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 32% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 30% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 28% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    radial-gradient(
+      circle at 26% 16%,
+      $lens #{$lensSize}vmin,
+      $invis #{$lensSize}vmin
+    ),
+    // metal border
+      radial-gradient(
+        circle at 78% 16%,
+        $metal-border calc(#{$lensSize}vmin + 0.3vmin),
+        $invis calc(#{$lensSize}vmin + 0.3vmin)
+      ),
+    radial-gradient(
+      circle at 26% 16%,
+      $metal-border calc(#{$lensSize}vmin + 0.2vmin),
+      $invis calc(#{$lensSize}vmin + 0.2vmin)
+    ),
+    linear-gradient(
+      to bottom,
+      #b1c8ea,
+      #66a0ce 12.8%,
+      $invis 12.8%,
+      $invis 19.2%,
+      #5f98c5 19.2%,
+      #2a4d6d
+    ),
+    linear-gradient(
+      to right,
+      $invis 25%,
+      $metal-border 20%,
+      $metal-border 91%,
+      $invis 91%
+    ),
+    linear-gradient(to right, $invis 25%, $lens 20%, $lens 80%, $invis 80%),
+    linear-gradient(to bottom, #b1c8ea, #66a0ce 12.8%, #5f98c5 19.2%, #2a4d6d),
+    linear-gradient(
+      to right,
+      $invis 25%,
+      $metal-border 25%,
+      $metal-border 80%,
+      $invis 80%
+    );
+
+  box-shadow: inset 0 0 0.2vmin #313b4c, inset 0px 0px 0vmin 0.2vmin #eff1f4,
+    inset 0 0 0vmin 0.4vmin #0e2033, inset 0.7vmin 0px 0.2vmin 0.01vmin #cbcfd3,
+    inset -0.7vmin 0px 0.2vmin 0.01vmin #cbcfd3,
+    // left side
+      inset 0.5vmin 0px 1vmin 0vmin #fff,
+    inset 0.9vmin 0px 0vmin 0.6vmin rgba($color: #405c75, $alpha: 0.5),
+    inset 1.7vmin 0px 0vmin 0vmin #0a2535, inset 2vmin 0px 1vmin 0vmin #0a2535,
+    // right side
+      inset -0.5vmin 0px 1vmin 0vmin #fff,
+    inset -0.9vmin 0px 0vmin 0.6vmin rgba($color: #405c75, $alpha: 0.5),
+    inset -1.7vmin 0px 0vmin 0vmin #0a2535, inset -2vmin 0px 1vmin 0vmin #0a2535,
+    // top
+      inset 0vmin 0.4vmin 0.4vmin 0vmin #a3dafb,
+    inset 0vmin 1.1vmin 0.2vmin 0vmin #bed5ff;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 58.2vmin;
+    width: 27.6vmin;
+    border-radius: 2.6vmin;
+    left: 15vmin;
+
+    $lensSize: 1.7;
+    background-image: radial-gradient(
+        circle at 25% 16%,
+        $lens 0vmin,
+        $invis calc(0vmin)
+      ),
+      // cam 1
+        radial-gradient(
+          circle at 85% 6%,
+          rgba(#fff, 0.5) 0.1vmin,
+          $invis 0.2vmin
+        ),
+      radial-gradient(
+        circle at 85% 6%,
+        lighten($lens, 10%) 0.6vmin,
+        lighten($lens, 10%) 0.7vmin,
+        $invis 0.7vmin
+      ),
+      radial-gradient(
+        circle at 85% 6%,
+        darken($metal-border, 85%) 0.6vmin,
+        $invis 0.8vmin
+      ),
+      radial-gradient(circle at 85% 6%, $lens 0.8vmin, $invis 0.8vmin),
+      radial-gradient(
+        circle at 85% 6%,
+        lighten(#1f2a2b, 5%) 1vmin,
+        $invis 1vmin
+      ),
+      linear-gradient(-70deg, rgba(#fff, 0.2) 45%, rgba(#fff, 0.4) 45%),
+      linear-gradient(45deg, rgba(#fff, 0.2) 45%, rgba(#fff, 0.4) 45%),
+      linear-gradient(#3498db, #1abc9c, #9b59b6 80%);
+
+    box-shadow: inset 0 0 0.2vmin #313b4c, inset 0px 0px 0vmin 0.2vmin #eff1f4,
+      inset 0 0 0vmin 0.4vmin #0e2033,
+      inset 0.7vmin 0px 0.2vmin 0.01vmin #cbcfd3,
+      inset -0.7vmin 0px 0.2vmin 0.01vmin #cbcfd3,
+      // left side
+        inset 0.5vmin 0px 1vmin 0vmin #fff,
+      inset 0.9vmin 0px 0vmin 0.6vmin rgba($color: #405c75, $alpha: 0.5),
+      inset 2vmin 0px 1vmin 0vmin rgba($color: #fff, $alpha: 0.2),
+      // right side
+        inset -0.5vmin 0px 1vmin 0vmin $invis,
+      inset -0.9vmin 0px 0vmin 0.6vmin rgba($color: #405c75, $alpha: 0.5),
+      inset -2vmin 0px 1vmin 0vmin rgba($color: #fff, $alpha: 0.2),
+      // top
+        inset 0vmin 0.4vmin 0.4vmin 0vmin #a3dafb,
+      inset 0vmin 1.1vmin 0.2vmin 0vmin #bed5ff;
+  }
+}
